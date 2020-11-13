@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Company Management</title>
+    
+</head>
+<body>
+    <style>
+        #form label.error {
+            margin-left: 10px;
+            color: red;
+            display: inline;
+        }
+    </style>
+    
+    <main class="container-fluid">
+        <div class="container-fluid">
+
+
+            <div id="edit"> <!--Start Edit-->
+                <h2 class="mb-3" >Edit Company</h2>
+                <form action="../html/index.html" method="GET" class="form-group row" id="form">
+                    <div class="col-5">
+                    <div class="">
+                        <label for="" class="col-4 font-weight-bold">Company Name*</label>
+                        <input type="text" name="company" id="company" class="col-3 user">
+                    </div>
+                    <div>
+                        <label for="" class="col-4 font-weight-bold">Operating Company*</label>
+                        <input type="checkbox" name="operating" id="operating">
+                    </div>
+                    <div>
+                        <label for="" class="col-4 font-weight-bold">Max Working Hours*</label>
+                        <input type="number" name="max" id="max"  class="col-2 user">
+                    </div>
+                    <div class="d-flex">
+                        <label for="" class="col-4 font-weight-bold">Zone List*</label>
+                        <select multiple size="7" class="col-3 m-1" id="list" name="list" >
+                            <option value="1">Zone 1</option>
+                            <option value="2">Zone 2</option>
+                            <option value="3">Zone 3</option>
+                            <option value="4">Zone 4</option>
+                            <option value="5">Zone 5</option>
+                            <option value="6">Zone 6</option>
+                            <option value="7">Zone 7</option>
+                            <option value="8">Zone 8</option>
+                            <option value="9">Zone 9</option>
+                            
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="column">
+                            <div class="col">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                            <div class="col">&nbsp;</div><br>
+                            <div class="col-2 mb-2" id="addZone" style="font-size: xx-large;"><i class="fas fa-chevron-double-right"></i></div>
+                            <div class="col-2" id="removeZone" style="font-size: xx-large;"><i class="fas fa-chevron-double-left"></i></div>
+                        </div>
+                </div>
+
+                <div class="col-5">
+                    <div>
+                        <label for="" class="col-4 font-weight-bold">Status*</label>
+                        <select  class="col-3" id="status2" name="status" >
+                            <option>Enable</option>
+                            <option>Disable</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="" class="col-4 font-weight-bold">Color*</label>
+                        <input type="color" name="color" id="color2" class="">
+                    </div><br><br>
+                    <div class="d-flex">
+                        <label for="" class="col-4 font-weight-bold">Whitelisted Zone*</label>
+                        <select multiple size="7" class="col-3 m-1" id="list2" name="list2" >
+                            
+                        </select><br>
+                    </div>
+                    <label for="" class="col-4"></label>
+                    <input type="submit" value="Save" class="btn btn-success" id="submit">
+                    <input type="button" value="Cancel" class="btn btn-secondary" id="cancel">
+
+                </div>
+        
+                </form>
+            </div> <!--End Edit -->
+
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/edit.js"></script>
+</body>
+</html>
